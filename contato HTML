@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>   
+    <link rel="stylesheet" type="text/css" href="contato.css">
+</head>    
+<body>
+    <header>
+    <h1>Fale Conosco</h1>
+    <nav>
+  <a href="inicio.html">Início</a>
+  <a href="vendas online.html">Pagina de Vendas</a>
+  <a href="contato.html">Contato</a>    
+    </nav>  
+    </header>
+    <main>
+        <form action="#" method="post">
+         <table border="0">
+          <tr>
+              <td><label for="nome">Nome:</label></td>
+              <td><input type="text" id="nome" name="nome" placeholder="Seu nome" required autofocus></td>
+          </tr>  
+          <tr>
+              <td><label for="email">E-mail:</label></td>
+              <td><input type="email" id="email" name="email" placeholder="Seu@email.com" required></td>   
+          </tr>   
+          <tr>
+              <td><label for="tel">Telefone:</label></td>  
+              <td><input type="tel" id="tel" name="tel" placeholder="Seu telefone"></td> 
+             </tr>   
+             <tr>
+                <td><label for="end">Endereço:</label></td> 
+                <td><input id="end" type="text" required name="end" placeholder="Seu endereço"></td>
+             </tr>
+             <tr>
+                 <td><label for="cep">Cep:</label></td>
+                 <td><input id="cep" type="text" required name="cep" placeholder="Seu CEP"></td>
+             </tr>
+                 <tr>
+                    <td><label for="idade">Idade:</label></td>
+                     <td><input id="idade" type="number" min="0" max="120" required name="idade" placeholder="Sua idade"></td> 
+                </tr>
+                <tr>
+                    <td><label for="nascimento">nascimento</label></td>
+                    <td><input id="nascimento" type="date" required name="nascimento" placeholder="data de nascimento"></td>
+                </tr>
+                <tr>
+                    <td><label for="assunto">Assunto:</label></td>
+                    
+                    <td>
+                        <select id="assunto" name="assunto" required>
+                            <option value="">Selecione...</option>
+                            <option value="suporte">Suporte Técnico</option>
+                            <option value="orcamento">Orçamento</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mensagem">Mensagem:</label></td>
+                    
+                    <td><textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem" required></textarea></td>
+                <td></td>
+                    <td><button type="submit">Enviar</button></td>
+                    <td></td>
+                </tr> 
+            </table>
+        </form>
+         <div class="whatsapp-contato">
+            <p class="box-whats">
+                <a href="https://wa.me/5534999433498?text=Olá,%20preciso%20de%20suporte!" target="_blank">
+                    Clique aqui para abrir a conversa direto no whatsapp
+                </a>
+            </p>
+         </div>
+            <div class="intro-contato">
+            <p>Estamos prontos para atendê-lo! Escolha o canal de sua preferência:</p>
+       <ul>
+            <li>📍 <strong>Atendimento:</strong> Sacramento e Cidades Vizinhas</li>
+         <li>⏱️ <strong>Funcionamento:</strong> Segunda a Sábado</li>
+     </ul> 
+</div>
+    </main>
+</body>
+</html>
+                     
