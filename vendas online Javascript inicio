@@ -1,0 +1,120 @@
+// ==========================================
+// DADOS DO ALUNO
+// ==========================================
+
+var nome = "Lucas pessoa do amaral";
+var cidade = "Sacramento - MG";
+var curso = "Análise e Desenvolvimento de Sistemas";
+var universidade = "Universidade Presbiteriana Mackenzie";
+var horario = "Boa noite!";
+
+var ano = "2026";
+var twitter = "twitter: @aluno";
+var facebook = "facebook: @aluno";
+var instagram = "instagram: @aluno";
+var linkedin = "linkedin: @aluno";
+var sexo = "Sexo: Masculino";
+var localizacao = "Localização - Polo: Sacramento - MG";
+
+// ==========================================
+// SAUDAÇÃO AUTOMÁTICA
+// ==========================================
+
+function saudacao() {
+
+    var agora = new Date();
+    var hora = agora.getHours();
+
+    var diasDaSemana = [
+        "domingo",
+        "segunda-feira",
+        "terça-feira",
+        "quarta-feira",
+        "quinta-feira",
+        "sexta-feira",
+        "sábado"
+    ];
+
+    var dia = diasDaSemana[agora.getDay()];
+
+    var mensagem;
+
+    if (hora >= 5 && hora < 12) {
+
+        mensagem = "Bom Dia!";
+
+    } else if (hora >= 12 && hora < 18) {
+
+        mensagem = "Boa Tarde!";
+
+    } else {
+
+        mensagem = "Boa Noite!";
+
+    }
+
+    alert(
+        "Nome: " + nome + "\n" +
+        "Cidade: " + cidade + "\n" +
+        "Curso: " + curso + "\n" +
+        "Universidade: " + universidade + "\n" +
+        mensagem + "\n" +
+        "Hoje é " + dia
+    );
+}
+
+// ==========================================
+// MENU DE INFORMAÇÕES
+// ==========================================
+
+function togglePontinhos() {
+
+    const menu = document.getElementById('dropdown-info');
+
+    menu.classList.toggle('mostrar');
+
+}
+
+// Fecha o menu ao clicar fora dele
+
+window.onclick = function(event) {
+
+    if (!event.target.closest('.menu-container')) {
+
+        const menu = document.getElementById('dropdown-info');
+
+        if (menu && menu.classList.contains('mostrar')) {
+
+            menu.classList.remove('mostrar');
+
+        }
+
+    }
+
+};
+
+// ==========================================
+// INFORMAÇÕES DO ALUNO NA PÁGINA
+// ==========================================
+
+document.write(nome + "<br>");
+document.write("Curso: " + curso + "<br>");
+document.write("Universidade: " + universidade + "<br>");
+document.write("Ano: " + ano + "<br>");
+document.write(twitter + "<br>");
+document.write(facebook + "<br>");
+document.write(instagram + "<br>");
+document.write(linkedin + "<br>");
+document.write(sexo + "<br>");
+document.write(localizacao + "<br>");
+
+// ==========================================
+// EVENTO DE CARREGAMENTO DA PÁGINA
+// ==========================================
+
+window.addEventListener("load", function() {
+
+    saudacao();
+
+});
+
