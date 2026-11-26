@@ -1,0 +1,332 @@
+/* --- Reset & Configurações Gerais --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0b0b12;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Moldura principal estilizada em tom violeta escuro (conforme layout)[cite: 1] */
+.app-container {
+    width: 100%;
+    max-width: 1050px;
+    background: linear-gradient(145deg, #12111d, #09080e);
+    border: 2px solid #3c325c;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Cabeçalho e Navegação --- */
+.top-nav, .cabecario-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.logo, .titulo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.nav-links a {
+    color: #a0a0b5;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ffffff;
+}
+
+/* Menu Dropdown de 3 Pontos */
+.menu-container {
+    position: relative;
+}
+
+.botao-pontinhos {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 6px;
+}
+
+.botao-pontinhos span {
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    background-color: #1a1829;
+    border: 1px solid #3c325c;
+    border-radius: 10px;
+    min-width: 170px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    z-index: 100;
+}
+
+.dropdown-menu.mostrar {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: #d1d1e0;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #2b2645;
+}
+
+/* --- Layout da Tela de Login --- */
+.login-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.login-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.login-info h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #a0a0b5;
+    margin-bottom: 5px;
+}
+
+.desc {
+    font-size: 14px;
+    color: #6e6e85;
+    margin-bottom: 30px;
+}
+
+/* Botão Google */
+.btn-google {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: 1px solid #3c325c;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-google:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.signup-text {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #a0a0b5;
+}
+
+.signup-text a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Card de Vidro (Glassmorphism)[cite: 1] */
+.login-card {
+    flex: 1;
+    min-width: 300px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    color: #a0a0b5;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 18px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid transparent;
+    border-radius: 25px;
+    color: #ffffff;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #7b61ff;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: #8b72ff;
+    border: none;
+    border-radius: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #7356ff;
+}
+
+/* --- Estilos do Conteúdo Principal (`sobre.html`) --- */
+.hero-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero-section h2 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.btn-google {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: transparent;
+    border: 1px solid #4a3e6d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none; /* Remove o sublinhado se usar a tag <a> */
+    transition: background-color 0.3s;
+}
+
+.btn-google:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.hero-section p {
+    color: #a0a0b5;
+    font-size: 16px;
+}
+
+.diferenciais, .categorias, .depoimentos {
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    border-left: 4px solid #8b72ff;
+    padding-left: 10px;
+}
+
+.lista-diferenciais {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    color: #c4c4d4;
+}
+
+.categorias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.caixa-categoria:hover {
+    transform: translateY(-3px);
+    border-color: #8b72ff;
+}
+
+.depoimento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+blockquote {
+    background: rgba(255, 255, 255, 0.02);
+    border-left: 3px solid #8b72ff;
+    padding: 15px;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: #b0b0c2;
+}
+
+blockquote em {
+    display: block;
+    margin-top: 8px;
+    font-style: normal;
+    color: #8b72ff;
+}
+
+/* --- Rodapé --- */
+footer, .footer-simple {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 13px;
+    color: #555566;
+}
+footer {
+    display: flex;             /* Ativa o sistema Flexbox */
+    flex-direction: column-reverse; /* Inverte a ordem: joga o script/texto de cima para baixo */
+    align-items: center;       /* Centraliza os elementos no rodapé (opcional) */
+    gap: 10px;                 /* Dá um espaço de respiro entre as linhas */
+}
