@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas Online de Eletrônicos</title>
+    <link rel="stylesheet" href="vendas online.css">
+</head>
+<body>
+
+    <!-- Cabeçalho Principal -->
+    <header class="top-header">
+        <div class="logo">Vendas Online</div>
+
+        <!-- Links de Navegação -->
+        <nav class="nav-links">
+            <a href="inicio.html">Início</a>
+            <a href="vendas online.html">Página de Vendas</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+
+        <!-- Menu de Três Pontinhos (Dropdown) -->
+        <div class="menu-container">
+            <button class="botao-pontinhos" onclick="togglePontinhos()" aria-label="Menu de Navegação">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div id="dropdown-info" class="dropdown-menu">
+                <nav class="menu-links">
+                    <a href="sobre.html">Início</a>
+                    <a href="vendas online.html">Página de Vendas</a>
+                    <a href="contato.html">Contato</a>
+                </nav> 
+            </div>
+        </div>
+    </header>
+
+    <!-- Secção Hero / Destaque Principal -->
+    <section class="hero-banner">
+        <div class="hero-text">
+            <span class="sub-title">Sony WH-CH720N</span>
+            <h1>Wireless <br><span>Celulares</span></h1>
+            <a href="#" class="btn-shop">Loja por categorias</a>
+        </div>
+        <div class="hero-description">
+            <h3>Description</h3>
+            <p>Atendimento excelente e produtos testados com garantia em toda a linha de eletrônicos.</p>
+        </div>
+    </section>
+
+    <!-- Grelha de Categorias / Produtos -->
+    <section class="categories-grid">
+        <div class="cat-card dark">
+            <div>
+                <p>Relogios Inteligentes</p>
+                <h3>Apple Watch Ultra</h3>
+                <img src="relogio inteligente.webp">
+            </div>
+            <a href="https://www.google.com/aclk?sa=L&ai=DChsSEwjjnuuz8OKXAxUeV0gAHQXQMVgYACICCAEQAxoCY2U&co=1&ase=2&gclid=CjwKCAjwgJHXBhBGEiwAHohJq1PMBaLbrgbiryVrfm0z-h2byN7WtP-otEwmF_NtXff8skX5h8MwORoCLScQAvD_BwE&cid=CAAS9gHkaFUMttfe8VO_P4UngPQMBFz6lZ7rV5lxok9lxpvcRtblaJDdNTnisV_ptVkcQ7Ja-VICybH4K9nR7Ls2yYC9pJw-077MNRhn11j0SeUvQ3C9BMri78BGobuWfOv1ATZ6imapX44r2xHE5u5E4G-yUeDG8ZrRNT9lL2UkVBpWIFRLn8jq-TPvf3Ct0K9wCvTEECIAWvklxexzK1u3LcUTlhOP0G1zr3-NYfDlil6VmvlOcjwp3raf7o-a4l9AV5ZecACr2kxwqD3DyMc_xStxLCjAyOSL4g5o-H1T_J7tq7Yoh4cmHkm19C5cSpk7VC6aCvrlFe0&cce=2&category=acrcp_v1_32&sig=AOD64_1eZjaRwrEvm2kHbAFbEa5ropuvQw&ctype=5&q=&nis=4&ved=2ahUKEwir0-Wz8OKXAxVYrZUCHcZfJukQ9aACKAB6BAgHECc&adurl=" class="btn-browse">Acessar</a>
+        </div>
+        <div class="cat-card red">
+            <div>
+                <p>Fones de Ouvidos</p>
+                <h3>Fones</h3>
+                <img src="fones de ouvido.webp">
+            </div>
+            <a href="https://www.google.com/aclk?sa=L&ai=DChsSEwjh1ODI8uKXAxUFaUgAHdQxC4MYACICCAEQPRoCY2U&co=1&ase=2&gclid=CjwKCAjwgJHXBhBGEiwAHohJq9trCN8q3gsgAV_xjT3MVD8pdN_QQl5yT8dzKrb_4ZJND2RySIRltxoCc5wQAvD_BwE&cid=CAAS9gHkaEmbav35bf4JwJB59psG7TR0JEem31MVQv1HKtuC7EGQQMP15lx2RtLGsxeH3MSRlWhvhyQXJQq8jDPbj5YA5eO0m33VTw0YHi42OFHAKk4-oiMQSORCna0bkt5_-N8scGZsUPvALQ3tS48lUU2NWOQUuo2wRgucat6rtnUm5NOm-ztXwP36pIVRdZ76Dc442l2wFgKBQgrFOe5GOKwgZ1wZAlZQLmuDEL-0ON33RoUVScQ9tP3U_dfAjuYv89DfoXS86JjeSKWKYmM75esET-EeYULOAHUL5JPUuySzZiyWIcWLRYrD_V0v_F-ZFF91dSTvyPY&cce=2&category=acrcp_v1_32&sig=AOD64_2LdeMDSCO4MZd_Kn0gUw08e0faVQ&ctype=5&q=&nis=4&ved=2ahUKEwiri9vI8uKXAxVkq5UCHQbmHQgQ8w4oAHoFCLMCEAE&adurl=" class="btn-browse">Acessar</a>
+        </div>
+        <div class="cat-card yellow">
+            <div>
+                <p>Mecbook</p>
+                <h3>Notebooks</h3>
+                 <img src="mecbook.webp">
+            </div>
+            <a href="https://www.google.com/aclk?sa=L&ai=DChsSEwj-wJvA8-KXAxVVS0gAHdNIDfkYACICCAEQTRoCY2U&co=1&ase=2&gclid=CjwKCAjwgJHXBhBGEiwAHohJqw-JYLo6RAh15B0rHUGtJpV2Ok1RCbvvMp3Sz34hCiNmNNt2spEgiBoCDHoQAvD_BwE&cid=CAAS9gHkaFCmUwDZWgUzAxCtA6Y8hJBO-np02Yed53DP-rIQlOXoMdfBy33G1je1c4rlzLgkKeywQqmVcQp-crTFPsrThazE70auVrcqRMmPZ4dVUkt-VVdlHnMKW1jVT5BniIaBmxNNxXVu3HUeYhWGkTZ9_nsPSvCIYwuN5hc465lY_TXGpSPyVPNyAZo5zjpYCc3vMQAOfbA-zPQK-MbkOpkyLNODBdBYomreJi7fvirLBWa9PvqZxA_yDV7COU6i2uRK61UJAxk5gr-XyP76qlZrbo556yp8OPMIpscWmfn7ZrP7UO5wPGox-hLFHRZ3P1K8-cF8OXQ&cce=2&category=acrcp_v1_32&sig=AOD64_0-kZ2AweJ26pK0wThgEi-B0Yt6cw&ctype=5&q=&nis=4&ved=2ahUKEwic25XA8-KXAxUBlZUCHZhZKMwQ8w4oAHoFCMQCEAE&adurl=" class="btn-browse">Acessar</a>
+        </div>
+        <div class="cat-card blue">
+            <div>
+                <p>Video Games</p>
+                <h3>PS5</h3>
+                 <img src="ps5 pro.jpg">
+            </div>
+            <a href="https://www.mercadolivre.com.br/sony-ps5-slim-ssd-1tb-dourado-edicao-ghost-of-yotei-ouro/p/MLB57736239" class="btn-browse">Acessar</a>
+        </div>
+        <div class="cat-card green">
+            <div>
+                <p>jogos</p>
+                <h3>Games</h3>
+                  <img src="jogos.jpg">
+            </div>
+            <a href="https://www.mercadolivre.com.br/jogo-horizon-zero-dawn-remastered-playstation-5-midia-fisica/up/MLBU4158156436" class="btn-browse">Acessar</a>
+        </div>
+        <div class="cat-card pink">
+            <div>
+                <p> Celulares</p>
+                <h3>Celulares</h3>
+                 <img src="celulares.webp">
+            </div>
+            <a href="https://www.mercadolivre.com.br/iphone-18-pro-max-2tb-bordo/p/MLB77855540?pdp_filters=item_id%3AMLB7662815714&from=gshop&matt_tool=53984452&matt_word=&matt_source=google&matt_campaign_id=22117557774&matt_ad_group_id=168627997570&matt_match_type=&matt_network=g&matt_device=c&matt_creative=728942948127&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735098639&matt_product_id=MLB77855540-product&matt_product_partition_id=2497443759258&matt_target_id=aud-2495935283228:pla-2497443759258&cq_src=google_ads&cq_cmp=22117557774&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22117557774&gbraid=0AAAAAD93qcCFszTqCS7Ga_dK1KeHF_yeH&gclid=CjwKCAjwgJHXBhBGEiwAHohJq9Zn3dpjQazfOAKMW6irkavFnzhx-X4lsBY0x7zYjBxzPXxzMqf0txoCd2MQAvD_BwE" class="btn-browse">Acessar</a>
+        </div>
+    </section>
+
+    <!-- Barra de Vantagens -->
+    <section class="features-bar">
+        <div>🚚 <strong>Entregas gratís</strong><br><small>Em compras selecionadas</small></div>
+        <div>🔄 <strong>garantia</strong><br><small>Garantia e devolução rápida</small></div>
+        <div>🎧 <strong>Online suport 24h/7</strong><br><small>Suporte técnico qualificado</small></div>
+        <div>🔒 <strong>Segurança no Pagamentos</strong><br><small>Pagamento 100% seguro</small></div>
+    </section>
+
+    <!-- Banner Promocional Xbox -->
+    <section class="promo-banner">
+        <div class="promo-left">
+            <span class="badge">20% OFF</span>
+            <h2>XBOX <br>SERIE <br>X</h2>
+            <small>Oferta por tempo limitado</small>
+        </div>
+        <div class="promo-center">
+            <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=500" alt="Xbox Series X">
+        </div>
+        <div class="promo-right">
+            <h3>"Video games"</h3>
+            <p>Componentes e consoles de última geração com entrega rápida e garantia total.</p>
+            <a href="https://www.mercadolivre.com.br/microsoft-xbox-series-x-1tb-standard-cor-preto/p/MLB37335941?pdp_filters=item_id%3AMLB4889108783&from=gshop&matt_tool=91562990&matt_word=&matt_source=google&matt_campaign_id=22090193891&matt_ad_group_id=191545542882&matt_match_type=&matt_network=g&matt_device=c&matt_creative=787871501933&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735128761&matt_product_id=MLB37335941-product&matt_product_partition_id=2500527835421&matt_target_id=aud-2495935283228:pla-2500527835421&cq_src=google_ads&cq_cmp=22090193891&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=22090193891&gbraid=0AAAAAD93qcCgn5BQv7wxMYJy3fmk7Yf-7&gclid=CjwKCAjwgJHXBhBGEiwAHohJqw2dGp4adhAz8hq6Agur6iFQN5mHr-n6CxB-f854WKVHxX7IQqD-QRoCfmoQAvD_BwE" class="btn-shop">Comprar</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Vendas Online - Todos os direitos reservados.</p>
+        <script src="sobre.js"></script>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
