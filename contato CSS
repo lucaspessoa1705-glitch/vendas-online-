@@ -1,0 +1,110 @@
+body {
+    background-color: rgb(17, 17, 17);   
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    border: 2px solid #9b7fff;
+    background-color: #362661;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    text-align: center;
+}
+nav a {
+    text-align: center;
+    margin: 0 10px;
+    text-align: center;
+    border: 2px solid #3b2c53;
+    background-color: #7562a8;
+     color: rgb(0, 0, 0);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px; /* Espaço entre o quadrado do nome e a caixa de resposta */
+}
+
+/* APENAS A PRIMEIRA COLUNA (Nomes/Rótulos) fica com o quadrado azul */
+tr td:first-child {
+    font-size: 20px;
+    text-align: left;
+    border: 2px solid #3b2c53;
+    background-color: #7562a8;
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+/* A SEGUNDA COLUNA (Caixas de resposta) fica transparente */
+tr td:last-child {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+/* Ajusta o tamanho e estilo das caixas de texto */
+tr td input, tr td select, tr td textarea {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #3b2c53;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    font-size: 18px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+div, p, a {
+    text-align: center;
+    font-size: 20px;
+}
+
+.box-whats a {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #312e4d;
+    background-color: #7562a8;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro-contato {
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 35px;
+    border: 2px solid #b38aff;
+    background-color: #362661;
+    color: rgb(255, 255, 255);
+    margin-top: 125px; /* Aumente ou diminua esse valor conforme quiser */
+}
+
+.intro-contato p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.intro-contato ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.intro-contato li {
+    margin-bottom: 8px;
+}
+
+
