@@ -1,0 +1,13 @@
+function togglePontinhos() {
+    const dropdown = document.getElementById("dropdown-info");
+    dropdown.classList.toggle("ativo");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.botao-pontinhos') && !event.target.matches('.botao-pontinhos span')) {
+        const dropdown = document.getElementById("dropdown-info");
+        if (dropdown && dropdown.classList.contains('ativo')) {
+            dropdown.classList.remove('ativo');
+        }
+    }
+}
